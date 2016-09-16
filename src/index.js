@@ -113,4 +113,4 @@ let Emitter = {
     emit,
 };
 
-window.Emitter = Emitter;
+export default Emitter;
