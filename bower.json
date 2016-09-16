@@ -1,0 +1,27 @@
+{
+  "name": "just-emitter",
+  "description": "Event emitter for modern browsers.",
+  "main": "dist/emitter.js",
+  "authors": [
+    "JustClear"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "emitter",
+    "event",
+    "library"
+  ],
+  "homepage": "https://github.com/JustClear/just-emitter",
+  "ignore": [
+    "**/.*",
+    ".*",
+    "*.js",
+    "*.json",
+    "*.md",
+    "*.yml",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

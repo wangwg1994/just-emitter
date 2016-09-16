@@ -1,0 +1,45 @@
+{
+  "name": "just-emitter",
+  "version": "1.0.0",
+  "description": "Event emitter for modern browsers.",
+  "main": "dist/emitter.js",
+  "scripts": {
+    "test": "mocha test/index.js",
+    "start": "npm run watch",
+    "watch": "NODE_ENV=development rollup -w -c rollup.config.js",
+    "dev": "NODE_ENV=development rollup -c rollup.config.js",
+    "prod": "NODE_ENV=production rollup -c rollup.config.js",
+    "publish": "rm -rf dist && npm run dev && npm run prod",
+    "lint": "eslint src",
+    "flow": "flow src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustClear/just-emitter.git"
+  },
+  "keywords": [
+    "emitter",
+    "event"
+  ],
+  "author": "JustClear",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JustClear/just-emitter/issues"
+  },
+  "homepage": "https://github.com/JustClear/just-emitter#readme",
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-syntax-flow": "^6.8.0",
+    "babel-plugin-transform-class-properties": "^6.10.2",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "eslint": "^3.4.0",
+    "expect.js": "^0.3.1",
+    "flow-bin": "^0.31.1",
+    "mocha": "^3.0.2",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-sourcemaps": "^0.3.6",
+    "rollup-plugin-uglify": "^1.0.1",
+    "rollup-watch": "^2.5.0"
+  }
+}
